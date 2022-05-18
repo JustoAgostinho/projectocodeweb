@@ -4,12 +4,14 @@
 
 <head>
     <title>JR| Olhando para o Futuro</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!-- Linkando o arquivo css com o arquivo html -->
       <link rel="stylesheet" href="style/index.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -17,123 +19,203 @@
 
         <div id="area-logo">
             <a href="index.html">
-            <img src="@" alt="logotipo" id="logotipo"></a>
+            <img src="#" alt="logotipo" id="logotipo"></a>
         </div>
 
-        <nav id="menu">
-             <ul>
-                 <li><a id="cad" href="#">CADASTRE A SUA ESCOLA</a></li>
-                 <li><a id="login" href="#">Entrar ou criar conta</a></li>
-             </ul>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <button class="btn btn-outline-success" type="button" href="#">CADASTRE O SEU MINITÉRIO</button>
+              <button class="btn btn-outline-success" type="button" href="#">CADASTRE A SUA ESCOLA</button>
+              <button class="btn btn-sm btn-outline-secondary" type="button" href="#">Entrar ou criar conta</button>
+            </form>
         </nav>
 
     </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/pre.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>A alegria de ter Uma Educação Saudável</h5>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Banner.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>As melhores Escolas para seu Filho</h5>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/medio.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>A Educação é a força que Impulsiona um País</h5>
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
 
-    <div id="banner">
-        <img src="img/Banner.jpg" alt="image do site">
-    </div>
+
     <div id="banner2" style="background-color:rgb(18, 153, 243);height: 200px;">
         <h1 style="color: white; text-align: center; margin-bottom: 50px;"><b>Encontre tudo sobre as Escolas de Angola</b></h1>
-
-        <div id="banner3">
-            <input type="text" placeholder="Insira a sua Provícia">
-            <input type="text" placeholder="Insira o seu Município">
-            <input type="text" placeholder="Escolha a sua Classe">
-            <input type="button" value="Encontrar Escolas" onclick="Encontrar_Escolas()">
+        <div id="btt">
+            <div  id="bt1" class="input-group">
+                <select class="custom-select" id="inputGroupSelect04" aria-label="Exemplo de select com botão addon">
+                <option selected>Seleccione a sua Provícia...</option>
+                <option value="1">Bengo</option>
+                <option value="2">Zaire</option>
+                <option value="3">Benguela</option>
+                <option value="4">Bie</option>
+                <option value="5">Cabinda</option>
+                <option value="6">Cuando Cubango</option>
+                <option value="7">Cuanza Norte</option>
+                <option value="8">Cuanza Sul</option>
+                <option value="9">Cunene</option>
+                <option value="10">Huambo</option>
+                <option value="11">Huila</option>
+                <option value="12">Luanda</option>
+                <option value="13">Lunda Norte</option>
+                <option value="14">Lunda Sul</option>
+                <option value="15">Malanje</option>
+                <option value="16">Moxico</option>
+                <option value="17">Namibe</option>
+                <option value="18">Uige</option>
+                </select>
+            </div>
+            <div id="bt2" class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite o seu Município" aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+            <div id="bt3" class="input-group">
+                <select class="custom-select" id="inputGroupSelect04" aria-label="Exemplo de select com botão addon">
+                <option selected>Seleccione a sua Classe...</option>
+                <option value="1">Pré-Escolar</option>
+                <option value="2">Iniciação</option>
+                <option value="3">1ª Classe</option>
+                <option value="4">2ª Classe</option>
+                <option value="5">3ª Classe</option>
+                <option value="6">4ª Classe</option>
+                <option value="7">5ª Classe</option>
+                <option value="8">6ª Classe</option>
+                <option value="9">7ª Classe</option>
+                <option value="10">8ª Classe</option>
+                <option value="11">9ª Classe</option>
+                <option value="12">10ª Classe</option>
+                <option value="13">11ª Classe</option>
+                <option value="14">12ª Classe</option>
+                <option value="15">13ª Classe</option>
+                <option value="16">1° Ano da Faculdade</option>
+                <option value="17">2° Ano da Faculdade</option>
+                <option value="18">3° Ano da Faculdade</option>
+                <option value="18">4° Ano da Faculdade</option>
+                <option value="18">5° Ano da Faculdade</option>
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="button" id="button-addon2" >Pesquisar Escolas</button>
+                </div>
+            </div>
         </div>
-    </div>
-        
+    </div>        
     <main id="intro">
-    <div class="es">
-        <h1>Escolha o seu Nível</h1>
-    </div>
 
-        <section id="cartao">
-    
-            <div class="cart">
-                <img src="img/pre.jpg" alt="imagem 1">
-                <div class="conteudo">
-                    <h4 class="formato">Pré-Escolar</h4>
+        <div class="es">
+            <h1 style="text-align: center;">Escolha o seu Nível</h1>
+        </div>
+  
+            <div class="card-columns">
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/pre.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Pré-Escolar</a></h5>
+                    </div>
+                </div>
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/primario.jpeg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Primário</a></h5>
+                    </div>
+                </div>
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/funda.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Fundamental</a></h5>
+                    </div>
+                </div>
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/medio.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Médio</a></h5>
+                    </div>
+                </div>
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/uni1.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Públicas</a></h5>
+                    </div>
+                </div>
+                <div class="card" style="background-color:darkgray; border: none;">
+                  <img class="card-img-top" src="img/uni2.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Privadas</a></h5>
+                    </div>
                 </div>
             </div>
-    
-            <div class="cart">
-                <img src="img/primario.jpeg" alt="imagem 2">
-                <div class="conteudo">
-                    <h4 class="formato">Ensino Primário</h4>
-                    <h1 class="ja">Iniciação - 6ª Classe</h1>
-                </div>
-            </div>
-    
-            <div class="cart">
-                <img src="img/Ensino-fundamental-2.jpg" alt="imagem 3">
-                <div class="conteudo">
-                    <h4 class="formato">Ensino Fundamental</h4>
-                    <h1 class="ja"> 7ª Classe - 9ª Classe</h1>
-                </div>
-            </div>
-    
-        </section>
-
-    <div class="es">
-        <h1>Escolha o seu Nível</h1>
-    </div>
-
-        <section id="cartao">
-    
-            <div class="cart">
-                <img src="img/medio.jpg" alt="imagem 1">
-                <div class="conteudo">
-                    <h4 class="formato">Ensino Médio</h4>
-                </div>
-            </div>
-    
-            <div class="cart">
-                <img src="img/uni1.jpg" alt="imagem 2">
-                <div class="conteudo">
-                    <h4 class="formato">Universidades Públicas</h4>
-                </div>
-            </div>
-    
-            <div class="cart">
-                <img src="img/uni2.webp" alt="imagem 3">
-                <div class="conteudo">
-                    <h4 class="formato">Universidades Privadas</h4>
-                </div>
-            </div>
-    
-        </section>
-
+      
     </main>
 
-    <div class="es">
-        <h1>Algo mais pra você...</h1>
-    </div>
 
-    <section id="cartao">    
-        <div class="cart">
-            <img src="img/bolsa.jpg" alt="imagem 1">
-            <div class="conteudo">
-                <h4 class="formato">Bolsas de Estudos</h4>
-            </div>
+    <just id="js">
+        <div class="es">
+            <h1>Algo mais pra você...</h1>
         </div>
 
-        <div class="cart">
-            <img src="img/vaga.png" alt="imagem 2">
-            <div class="conteudo">
-                <h4 class="formato">Vagas Disponíveis</h4>
+        <section id="cartao">    
+            <div class="cart">
+                <div class="conteudo">
+                    <h4 class="formato" style="color:rgb(0, 162, 255);">Bolsas de Estudos</h4>
+                    <p><a><b>Universidades Angolanas</b></a></p>
+                    <p><a><b>Universidades Estrangeiras</b></a></p>
+
+
+                </div>
             </div>
-        </div>
 
-        <div class="cart">
-            <img src="img/cusos.jpg" alt="imagem 3">
-            <div class="conteudo">
-                <h4 class="formato">Cursos Disponíveis</h4>
+            <div class="cart">
+                <div class="conteudo">
+                    <h4 class="formato" style="color:rgb(0, 162, 255);">Vagas Disponíveis</h4>
+                    <p><a><b>Escolas Primárias</b></a></p>
+                    <p><a><b>Escolas do Ensino Fundamental</b></a></p>
+                    <p><a><b>Escolas do Ensino Médio</b></a></p>
+                    <p><a><b>Instituições Universitárias</b></a></p>
+                    <p><a><b>Concursos Públicos</b></a></p>
+
+               </div>
             </div>
-        </div>
 
-    </section>
+            <div class="cart">
+                <div class="conteudo">
+                    <h4 class="formato" style="color:rgb(0, 162, 255);">Cursos Disponíveis</h4>
+                    <p><a><b>Online</b></a></p>
+                    <p><a><b>Presencial</b></a></p>
+                    <p><a><b>Aulas ao Domicílio</b></a></p>
 
+                </div>
+            </div>
+        </section>
+
+    </just>
+    
     <footer>
         <section id="footer1">
             <div class="footer">
@@ -176,5 +258,8 @@
 
         <p>Copyright © 2022  JR| Olhando para o Futuro. TERMOS DE UTILIZAÇÃO  |  POLÍTICA DE PRIVACIDADE</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
