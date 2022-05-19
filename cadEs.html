@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="pt-pt">
+
+<head>
+    <title>CADASTRE a sua ESCOLA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <!-- Linkando o arquivo css com o arquivo html -->
+      <link rel="stylesheet" href="style/index.css">
+      <link rel="stylesheet" href="style/cadEs.css">   
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: darkgray;">
+    <header id="cabecalho">
+
+        <div id="area-logo">
+            <a href="index.html">
+            <img src="#" alt="logotipo" id="logotipo"></a>
+        </div>
+        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="index.html">Voltar</a></button>
+    </header>
+    <div id="esc">
+        <form action="exibir-dados.php" class="formulario" method="post"> 
+          <hi><b><i>LOGIN</i></b></hi>
+          <p>Olá, para começar, precisamos criar a sua conta.</p>
+          
+          <div class="field">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+          </div>
+          
+          <div class="field">
+              <label for="telefone">Seu Telefone:</label>
+              <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+          </div>
+  
+          <div class="field">
+              <label for="email">Seu E-Mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+          </div>        
+        </form>
+      <form action="exibir-dados.php" class="formulario" method="post"> 
+        <hi><b><i>ESCOLA OU INSTITUIÇÃO</i></b></hi>
+        <p>Para trazer informações, precisamos saber mais sobre a sua Escola.</p>
+        
+        <div class="field">
+            <label for="nome">Nome da escola:</label>
+            <input type="text" id="nome" name="nome da escola" placeholder="Digite O Nome da escola*" required>
+        </div>
+        
+        <div class="field">
+            <label for="telefone">Número de alunos:</label>
+            <input type="text" id="telefone" name="Número de alunos" placeholder="Número de alunos">
+        </div>
+
+        <div class="field">
+            <label for="email">E-Mail da Escola:</label>
+            <input type="email" id="email" name="email" placeholder="Digite o E-Mail*" required>
+        </div>        
+        <div class="field">
+          <label for="email">Tipo da escola:</label>
+          <input type="email" id="email" name="Tipo da escola" placeholder="Digite o Tipo da escola*" required>
+      </div>        
+      <div class="field">
+        <label for="email">Seu NIF:</label>
+        <input type="email" id="email" name="NIF" placeholder="Digite seu NIF*" required>
+    </div>        
+       <div class="field radiobox">
+            <span>Deseja receber nossas novidades?</span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+        </div>
+        <button class="btn btn-success" type="button" >Enviar</button>
+      </form>
+
+    </div>
+    </body>
+    <footer>
+        <p>Copyright © 2022  JR| Olhando para o Futuro. TERMOS DE UTILIZAÇÃO  |  POLÍTICA DE PRIVACIDADE</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

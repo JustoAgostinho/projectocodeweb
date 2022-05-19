@@ -12,25 +12,17 @@ body{
 #cabecalho{
     background-color: rgb(255, 255, 255);
     display: flex;
+    align-items: flex-end;
     justify-content: space-between; 
-    padding: 20px;
-}
+    padding: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
 
-#menu a{
-    cursor: pointer; 
-    font-weight: bolder;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 20px 10px;
-    transition: all 1s
-    
-    
 }
+#nav{
+    margin-left: 50px;
+    margin-right: 50px;
 
-#menu{
-    display: flex;
-    align-items: center; 
-    margin-right: 30px;
 }
 
 #area-logo{
@@ -43,23 +35,6 @@ body{
     width: 100px;
 }
 
-#menu li{
-    display: inline-block;
-    margin-left: 2px;
-}   
-#cad:hover{
-    background-color: rgb(255, 255, 255);
-    background-color:rgb(0, 0, 0);
-}
-
-#login:hover{
-    color: #ecca0a;
-    font-size: 18px;
-}
-
-.active {
-    color:#FFF;
-}
 #banner img{
     position: relative;
     height: 80vh;
@@ -67,22 +42,20 @@ body{
 }
 
 #cartao{
-    margin-top: 100px;
-    padding: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap; 
     
 }
-
 .cart{
-    margin-top: -90px;
-    margin-left: 6px;
-    margin-bottom: 70px;
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 2px;
     cursor: pointer;
-    text-align: center;
-    width: 350px;
-    border-radius: 16px;
+    text-align: left;
 }
 
 
@@ -93,26 +66,24 @@ body{
 }
 
 .cart .conteudo h4{
-    margin-bottom: 12px;
+    margin-bottom: 2px;
     background-color: rgba(75,0,130,0.1);
-    width: 330px;
     text-align: center;
     font-size: 26px;
     padding: 5px;
-    border-radius: 30px;
-    color: #1900ff;
 
 }
 .es h1{
-    margin-bottom: 40px;
+    margin-top: -px;
+    margin-bottom: 10px;
     text-align: left;
     margin-left: 20px;
 }
 
 footer{
     background-color: #222;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 20px;
     color: #fff;
     text-align: center; 
 
@@ -127,11 +98,11 @@ footer{
     font-size: 12px;
     text-align: left;
     list-style-type: none;
-    margin-bottom: 20px;   
+    margin-bottom: 10px;   
     
 }
 .footer h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -141,14 +112,14 @@ footer{
     flex-direction: row;
 }
 footer p{
-    margin-top: 80px;
+    margin-top: 10px;
 }
 main{
     margin-top: 0 auto;
     text-align: center;
     color:rgb(0, 0, 0);
     background-color: darkgray;
-    height: 63vw;
+    height: 71vw;
 }
 
 main #intro{
@@ -174,4 +145,19 @@ main #intro{
     flex-direction: row;
     align-items: center;
     padding: 0 auto;
+}
+
+#banner2 li{
+    margin-top: -35px;
+    text-align: left;
+    margin-left: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    list-style-type: none
+}
+
+#cartt h5{
+    font-size: 30px;
 }

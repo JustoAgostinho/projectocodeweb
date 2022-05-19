@@ -21,21 +21,17 @@
             <a href="index.html">
             <img src="#" alt="logotipo" id="logotipo"></a>
         </div>
-
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-              <button class="btn btn-outline-success" type="button" href="#">CADASTRE O SEU MINITÉRIO</button>
-              <button class="btn btn-outline-success" type="button" href="#">CADASTRE A SUA ESCOLA</button>
-              <button class="btn btn-sm btn-outline-secondary" type="button" href="#">Entrar ou criar conta</button>
-            </form>
-        </nav>
-
+        <div id="nav">
+            <button class="btn btn-outline-success" type="button"><a href="cadMi.html" style="text-decoration:none">CADASTRE O SEU MINITÉRIO</a></button>
+            <button class="btn btn-outline-success" type="button"><a href="cadEs.html" style="text-decoration:none">CADASTRE A SUA ESCOLA</a></button>
+            <button class="btn btn-outline-info" type="button"><a href="login.html" style="text-decoration:none">Entrar ou criar conta</a></button>
+        </div>
     </header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -65,11 +61,14 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Próximo</span>
         </a>
-      </div>
+    </div>
 
 
     <div id="banner2" style="background-color:rgb(18, 153, 243);height: 200px;">
-        <h1 style="color: white; text-align: center; margin-bottom: 50px;"><b>Encontre tudo sobre as Escolas de Angola</b></h1>
+        <h1 style="color: white; text-align: center; margin-bottom: 40px;"><b>Obtenha Todas Informações das Escolas de Angola</b></h1>
+                <li>Temos mais de ... escolas cadastradas em nosso site. </li>
+                <li> Avalie sua escola, Encontre com facilidade vagas para concursos</li>
+                <li>E garanta as melhores bolsas de estudos contribuindo assim para a Educação Angolana.</li>
         <div id="btt">
             <div  id="bt1" class="input-group">
                 <select class="custom-select" id="inputGroupSelect04" aria-label="Exemplo de select com botão addon">
@@ -125,52 +124,54 @@
                     <button class="btn btn-success" type="button" id="button-addon2" >Pesquisar Escolas</button>
                 </div>
             </div>
+            
         </div>
-    </div>        
+    </div> 
+
     <main id="intro">
 
         <div class="es">
             <h1 style="text-align: center;">Escolha o seu Nível</h1>
         </div>
   
-            <div class="card-columns">
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/pre.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Pré-Escolar</a></h5>
-                    </div>
-                </div>
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/primario.jpeg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Primário</a></h5>
-                    </div>
-                </div>
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/funda.png" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Fundamental</a></h5>
-                    </div>
-                </div>
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/medio.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Médio</a></h5>
-                    </div>
-                </div>
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/uni1.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Públicas</a></h5>
-                    </div>
-                </div>
-                <div class="card" style="background-color:darkgray; border: none;">
-                  <img class="card-img-top" src="img/uni2.webp" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Privadas</a></h5>
-                    </div>
+        <div id="cartt" class="card-columns">
+            <div class="card" style="background-color:darkgray; border: none;">
+            <img class="card-img-top" src="img/pre.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Pré-Escolar</a></h5>
                 </div>
             </div>
+            <div class="card" style="background-color:darkgray; border: none;">
+                <img class="card-img-top" src="img/primario.jpeg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Primário</a></h5>
+                </div>
+            </div>
+            <div class="card" style="background-color:darkgray; border: none;">
+                <img class="card-img-top" src="img/funda.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Fundamental</a></h5>
+                </div>
+            </div>
+            <div class="card" style="background-color:darkgray; border: none;">
+                <img class="card-img-top" src="img/medio.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Ensino Médio</a></h5>
+                </div>
+            </div>
+            <div class="card" style="background-color:darkgray; border: none;">
+                <img class="card-img-top" src="img/uni1.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Públicas</a></h5>
+                </div>
+            </div>
+            <div class="card" style="background-color:darkgray; border: none;">
+                <img class="card-img-top" src="img/uni2.webp" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="badge badge-info">Universidades Privadas</a></h5>
+                </div>
+            </div>
+        </div>
       
     </main>
 
@@ -186,8 +187,6 @@
                     <h4 class="formato" style="color:rgb(0, 162, 255);">Bolsas de Estudos</h4>
                     <p><a><b>Universidades Angolanas</b></a></p>
                     <p><a><b>Universidades Estrangeiras</b></a></p>
-
-
                 </div>
             </div>
 
@@ -199,8 +198,7 @@
                     <p><a><b>Escolas do Ensino Médio</b></a></p>
                     <p><a><b>Instituições Universitárias</b></a></p>
                     <p><a><b>Concursos Públicos</b></a></p>
-
-               </div>
+                </div>
             </div>
 
             <div class="cart">
@@ -209,7 +207,6 @@
                     <p><a><b>Online</b></a></p>
                     <p><a><b>Presencial</b></a></p>
                     <p><a><b>Aulas ao Domicílio</b></a></p>
-
                 </div>
             </div>
         </section>
@@ -221,13 +218,11 @@
             <div class="footer">
                 <ul>
                     <h1><b>Encontre em Nosso portal:</b></h1>
-                    <li><a href="#" style="text-decoration: none; color: white;">Melhores Escolas de Luanda</a></li>
-                    <li><a href="#" style="text-decoration: none; color: white;">Melhores Escolas do Ensino Médio</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">Melhores Escolas de cada Província</a></li>
                     <li><a href="#" style="text-decoration: none; color: white;">Bolsas de Estudo em Escolas</a></li>
                     <li><a href="#" style="text-decoration: none; color: white;">Escolas por Cidade e Bairro</a></li>
                     <li><a href="#" style="text-decoration: none; color: white;">Mensalidades de Escolas</a></li>
                     <li><a href="#" style="text-decoration: none; color: white;">Avaliação de Pais e Alunos</a></li>
-
                 </ul>
             </div>
 
@@ -235,7 +230,7 @@
                 <ul>
                     <h1><b>Sobre o Nosso portal:</b></h1>
                     <li><a href="#" style="text-decoration: none; color: white;" >Quem Somos</a></li>
-                    <li><a href="#" style="text-decoration: none; color: white;">Encontre notícias actualizadas</a></li>
+                    <li><a href="#" style="text-decoration: none; color: white;">Seja nosso Parceiro</a></li>
                 </ul>
             </div>
 
@@ -249,9 +244,7 @@
 
             <div class="footer">
                 <ul>
-                    <h1><b>Fale Conosco:</b></h1>
-                    <li>Contactos/Whatsapp: 935835996</li>
-                    <li>Email: justosalito@gmail.com</li>
+                    <h1><b><a href="fale.html" style="text-decoration: none;"> Fale Conosco</a></b></h1>
                 </ul>
             </div>
         </section>
