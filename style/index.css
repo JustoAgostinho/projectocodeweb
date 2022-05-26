@@ -130,11 +130,11 @@ main #intro{
     color: #222;
 }
 #bt1{
-    width: 30%;
+    width: 35%;
 }
 
 #bt2{
-    width: 30%; 
+    width: 35%; 
 }
 
 #bt3{
@@ -146,20 +146,28 @@ main #intro{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
 }
 
 #banner2 li{
-    margin-top: -35px;
+    margin-top: -25px;
     text-align: left;
     margin-left: 20%;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 5px;
-    padding: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 10px;
     list-style-type: none
+}
+
+#banner2 h1{
+  padding-top: 20px;
 }
 
 #cartt h5{
     font-size: 30px;
+}
+#input-group{
+    margin-top: 50%;
 }
