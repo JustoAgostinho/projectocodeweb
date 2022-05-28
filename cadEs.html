@@ -1,90 +1,110 @@
 <!DOCTYPE html>
 
-<html lang="pt-pt">
-
-<head>
-    <title>CADASTRE a sua ESCOLA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-      <!-- Linkando o arquivo css com o arquivo html -->
-      <link rel="stylesheet" href="style/index.css">
-      <link rel="stylesheet" href="style/cadEs.css">   
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-</head>
-
-<body style="background-color: darkgray;">
-    <header id="cabecalho">
-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre o seu Ministério</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style/cadEs.css">
+    </head>
+    <body>
+      <header id="cabecalho">
         <div id="area-logo">
-            <a href="index.html">
-            <img src="img/logo.png" alt="logotipo" id="logotipo"></a>
+            <a href="index.html" >
+            <img src="img/logo.png" style="height:80px ;"alt="logotipo" id="logotipo"></a>
         </div>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="index.html">Voltar</a></button>
-    </header>
-    <div id="esc">
-        <form action="exibir-dados.php" class="formulario" method="post"> 
-          <hi><b><i>LOGIN</i></b></hi>
-          <p>Olá, para começar, precisamos criar a sua conta.</p>
-          
-          <div class="field">
-              <label for="nome">Nome Completo:</label>
-              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-          </div>
-          
-          <div class="field">
-              <label for="telefone">Seu Telefone:</label>
-              <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
-          </div>
+        </header>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1> Entar ou login</h1>
+                <p>Caso já tenha uma conta preencha somente o <b>email e a categoria</b></p>
+                
+                <fieldset>     
+                <label for="name">Nome ou email:</label>
+                <input type="text" id="name" name="user_name_or_email">
+
+                <label for="email">Número de Telefone:</label>
+                <input type="email" id="mail" name="user_email*">
   
-          <div class="field">
-              <label for="email">Seu e-mail:</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu e-mail*" required>
-          </div>        
-        </form>
-      <form action="exibir-dados.php" class="formulario" method="post"> 
-        <hi><b><i>ESCOLA OU INSTITUIÇÃO</i></b></hi>
-        <p>Para trazer informações, precisamos saber mais sobre a sua Escola.</p>
-        
-        <div class="field">
-            <label for="nome">Nome da escola:</label>
-            <input type="text" id="nome" name="nome da escola" placeholder="Digite O Nome da escola*" required>
-        </div>
-        
-        <div class="field">
-            <label for="telefone">Número de alunos:</label>
-            <input type="text" id="telefone" name="Número de alunos" placeholder="Número de alunos">
-        </div>
+                    
+                <label for="password">Palavra passe:</label>
+                <input type="password" id="password"       name="user_password*">
+      
+                <label for="password"> Confireme a Palavra passe:</label>
+                <input type="password" id="password"       name="user_password*">
 
-        <div class="field">
-            <label for="email"> O e-mail da Escola:</label>
-            <input type="email" id="email" name="email" placeholder="Digite o e-mail*" required>
-        </div>        
-        <div class="field">
-          <label for="email">Tipo da escola:</label>
-          <input type="email" id="email" name="Tipo da escola" placeholder="Digite o Tipo da escola*" required>
-      </div>        
-      <div class="field">
-        <label for="email">Seu NIF:</label>
-        <input type="email" id="email" name="NIF" placeholder="Digite seu NIF*" required>
-    </div>        
-       <div class="field radiobox">
-            <span>Deseja receber nossas novidades?</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                <label for="job">Categoría:</label>
+                <select id="job" name="user_job">
+                  <optgroup label="Área Directiva">
+                      <option value="web_designer"></option>
+                    <option value="frontend_developer">Director Geral</option>
+                    <option value="php_developer">Subdirector Administrativo</option>
+                    <option value="python_developer">Subdirector Pedagógico</option>
+                    <option value="rails_developer">Chefe de Secretária</option>
+                  </optgroup>
+                  <optgroup label="Área Pedagógica">
+                    <option value="android_developer">Coordenador</option>
+                    <option value="ios_developer">Professor</option>
+                    <option value="mobile_designer">Assistente</option>
+                  </optgroup>
+                  <optgroup label="Área Geral">
+                    <option value="business_owner">Encarregado de Educação</option>
+                    <option value="freelancer">Estudante</option>
+                  </optgroup>
+                </select>          
+            </form>
         </div>
-        <button class="btn btn-success" type="button" >Enviar</button>
-      </form>
+        <div class="col-md-12">
+          <form action="index.html" method="post">
+            <h1> Informações da sua Escola </h1>
+            
+            <fieldset>
+              
+              <legend><span class="number">1</span>Informações Básica</legend>
+            
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="user_name*">
+            
+              <label for="email">Email:</label>
+              <input type="email" id="mail" name="user_email*">
+           
+              <label for="email">Números de alunos:</label>
+              <input type="email" id="mail" name="user_email*">
 
+              <label for="email">Nível da Escola:</label>
+              <input type="email" id="mail" name="user_email*">
+
+
+              <label for="email">Tipo de Escola:</label>
+              <input type="email" id="mail" name="user_email*">
+                              
+            </fieldset>
+            <fieldset>  
+            
+              <legend><span class="number">2</span> Perfil do Ministério</legend>
+              
+             <label for="bio">Bio:</label>
+              <textarea id="bio" name="user_bio"></textarea>  
+
+              <label for="email">Número de Telefone:</label>
+              <input type="email" id="mail" name="user_email*">
+       
+            
+                <button type="submit">Cadastrar</button>
+            </form>
+            <button class="btn btn-sm btn-outline-secondary" type="button"><a href="index.html" style="color:white;text-decoration: none;
+                ">Voltar</a></button>
+
+        </div>
     </div>
-    </body>
     <footer>
         <p>Copyright © 2022  JR| Olhando para o Futuro. TERMOS DE UTILIZAÇÃO  |  POLÍTICA DE PRIVACIDADE</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+
+      
+    </body>
 </html>
