@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 
-<html lang="pt-pt">
-
-<head>
-    <title>CADASTRE a sua ESCOLA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-      <!-- Linkando o arquivo css com o arquivo html -->
-      <link rel="stylesheet" href="style/index.css">
-      <link rel="stylesheet" href="style/cadEs.css">   
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-</head>
-
-<body style="background-color: darkgray;">
-    <header id="cabecalho">
-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre o seu Ministério</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style/cadMi.css">
+    </head>
+    <body>
+      <header id="cabecalho">
         <div id="area-logo">
-            <a href="index.html">
-            <img src="img/logo.png" alt="logotipo" id="logotipo"></a>
-        </div>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="index.html">Voltar</a></button>
-    </header>
-    <form class="formulario" method="post"> 
-        <p> Envie uma mensagem preenchendo o formulário abaixo</p>
-        
-        <div class="field">
-            <label for="nome">Seu Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            <a href="index.html" ><img src="img/logo.png" style="height:80px ;"alt="logotipo" id="logotipo"></a>
         </div>
         
-        <div class="field">
-            <label for="telefone">Seu Telefone:</label>
-            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </header>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1> Fale Conosco</h1>            
+                <fieldset>
+                
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="user_name*">
+                
+                <label for="email">Assunto:</label>
+                <input type="email" id="mail" name="user_email*">        
+                            
+                </fieldset>
+                <fieldset>  
+                        
+                <label for="bio">Sua Mensagem:</label>
+                <textarea id="bio" name="user_bio"></textarea>    
+                
+                <button type="submit">Enviar</button>
+            </form>         
         </div>
-
-        <div class="field">
-            <label for="email">Seu e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-        </div>        
-        <div class="field radiobox">
-            <span>Deseja receber nossas novidades?</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
-        </div>
-        <div class="field">
-            <label for="mensagem">Sua mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
-        </div>
-
-        <input type="submit" name="acao" value="Enviar">
-    </form>    </body>
+    </div>
     <footer>
         <p>Copyright © 2022  JR| Olhando para o Futuro. TERMOS DE UTILIZAÇÃO  |  POLÍTICA DE PRIVACIDADE</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+
+    
+    </body>
 </html>
