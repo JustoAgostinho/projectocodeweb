@@ -3,14 +3,15 @@
 <html lang="pt-pt">
 
 <head>
-    <title>Ensino Primário</title>
+    <title>Formulário</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
       <!-- Linkando o arquivo css com o arquivo html -->
       <link rel="stylesheet" href="style/index.css">
-      <link rel="stylesheet" href="style/huambo.css"> 
+      <link rel="stylesheet" href="style/huambo.css">
+      <link rel="stylesheet" href="style/formul.css" 
   
 
 </head>
@@ -22,15 +23,15 @@
             <a href="index.html">
             <img src="img/logo.png" alt="logotipo" id="logotipo"></a>
         </div>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="med.html">Voltar</a></button>
+        <button id="button" type="button"><a href="prvvv.html">Voltar</a></button>
     </header>
 
     <div>
-        <form action="Script_do_Formulario.php" method="post">
+        <form action="Script_do_Formulario.php" method="post" style="margin-left:5%; margin-right:5%; margin-top: 5%;">
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
-            <legend>Dados Pessoais</legend>
+            <legend><b>Dados Pessoais</b></legend>
             <table cellspacing="10">
             <tr>
             <td>
@@ -55,49 +56,89 @@
             <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
             <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
             </td>
+            <td>
+                <label>Número do Bilhete:</label>
+            </td>
+            <td align="left" >
+                <input type="text" name="email">
+            </td>
             </tr>
             <tr>
             <td>
-                <label for="rg">RG: </label>
+                <label for="rg">Nome do Pai: </label>
+            </td>
+            <td align="left" >
+                <input type="text" name="email">
+            </td>
+            <td>
+                <label for="sobrenome">Sobrenome: </label>
             </td>
             <td align="left">
-                <input type="text" name="rg" size="13" maxlength="13"> 
+                <input type="text" name="sobrenome">
             </td>
             </tr>
             <tr>
             <td>
-                <label>CPF:</label>
+                <label>Nome da Mãe:</label>
+            </td>
+            <td align="left" >
+                <input type="text" name="email">
+            </td>
+            <td>
+                <label for="sobrenome">Sobrenome: </label>
             </td>
             <td align="left">
-                <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+                <input type="text" name="sobrenome">
             </td>
             </tr>
+            <td>
+                <label>Natural de:</label>
+            </td>
+            <td align="left" >
+                <input type="text" name="email">
+            </td>
+            <td>
+                <label>Número de telefone:</label>
+            </td>
+            <td align="left" >
+                <input type="text" name="email">
+            </td>
+            <tr>
+            <td>
+                <label for="imagem">Cópia do Bilhete(Clorida):</label>
+            </td>
+            <td>
+                <input type="file" name="imagem" >
+            
+            </td>
+            </tr>
+    
             </table>
             </fieldset>
             
             <br />
-            <!-- ENDEREÇO -->
+            <!-- MATRÍCULA -->
             <fieldset>
-            <legend>Dados de Endereço</legend>
+            <legend><b>Dados da Matrícula</b></legend>
             <table cellspacing="10">
             
             <tr>
             <td>
-                <label for="rua">Rua:</label>
+                <label for="rua">Classe:</label>
             </td>
             <td align="left">
                 <input type="text" name="rua">
             </td>
             <td>
-                <label for="numero">Numero:</label>
+                <label for="numero">Curso:</label>
             </td>
             <td align="left">
-                <input type="text" name="numero" size="4">
+                <input type="text" name="numero" >
             </td>
             </tr>
             <tr>
             <td>
-                <label for="bairro">Bairro: </label>
+                <label for="bairro">Período: </label>
             </td>
             <td align="left">
                 <input type="text" name="bairro">
@@ -105,63 +146,48 @@
             </tr>
             <tr>
             <td>
-                <label for="estado">Estado:</label>
+                <label for="bairro">Opção Linguistica: </label>
             </td>
             <td align="left">
-                <select name="estado"> 
-                <option value="ac">Acre</option> 
-                <option value="al">Alagoas</option> 
-                <option value="am">Amazonas</option> 
-                <option value="ap">Amapá</option> 
-                <option value="ba">Bahia</option> 
-                <option value="ce">Ceará</option> 
-                <option value="df">Distrito Federal</option> 
-                <option value="es">Espírito Santo</option> 
-                <option value="go">Goiás</option> 
-                <option value="ma">Maranhão</option> 
-                <option value="mt">Mato Grosso</option> 
-                <option value="ms">Mato Grosso do Sul</option> 
-                <option value="mg">Minas Gerais</option> 
-                <option value="pa">Pará</option> 
-                <option value="pb">Paraíba</option> 
-                <option value="pr">Paraná</option> 
-                <option value="pe">Pernambuco</option> 
-                <option value="pi">Piauí</option> 
-                <option value="rj">Rio de Janeiro</option> 
-                <option value="rn">Rio Grande do Norte</option> 
-                <option value="ro">Rondônia</option> 
-                <option value="rs">Rio Grande do Sul</option> 
-                <option value="rr">Roraima</option> 
-                <option value="sc">Santa Catarina</option> 
-                <option value="se">Sergipe</option> 
-                <option value="sp">São Paulo</option> 
-                <option value="to">Tocantins</option> 
-            </select>
+                <input type="text" name="bairro">
             </td>
             </tr>
             <tr>
             <td>
-                <label for="cidade">Cidade: </label>
+                <label for="imagem">Fotografia tipo passe:</label>
             </td>
-            <td align="left">
-                <input type="text" name="cidade">
+            <td>
+                <input type="file" name="imagem" >
+            
             </td>
             </tr>
             <tr>
             <td>
-                <label for="cep">CEP: </label>
+                <label for="imagem">Certificado:</label>
             </td>
-            <td align="left">
-                <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+            <td>
+                <input type="file" name="imagem" >
+            
             </td>
             </tr>
+            <tr>
+            <td>
+                <label for="imagem">Atestado Médico:</label>
+            </td>
+            <td>
+                <input type="file" name="imagem" >
+            
+            </td>
+            </tr>
+    
+    
             </table>
             </fieldset>
             <br />
             
             <!-- DADOS DE LOGIN -->
             <fieldset>
-            <legend>Dados de login</legend>
+            <legend><b>Dados de login</b></legend>
             <table cellspacing="10">
             <tr>
             <td>
@@ -207,8 +233,8 @@
             </table>
             </fieldset>
             <br />
-            <input class="btn btn-primary" type="submit">
-            <input style="border: btn btn-secondary;" class="btn btn-secondary"type="reset" value="Limpar" >
+            <button class="button" type="button"><a>Enviar</a></button>
+            <button class="button1" type="button"><a>Limpar</a></button>
         </form>
                 
     </div>    
